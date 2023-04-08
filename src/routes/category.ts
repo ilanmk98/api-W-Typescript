@@ -103,7 +103,7 @@ router.patch("/toggleEnabled", (req, res) => {
                         res.send(e.message)
                     })
 
-                console.log(toggleInProducts(req.body.title, currentStatus))
+                toggleInProducts(req.body.title, currentStatus)
             } else {
                 res.send("There is no such category")
             }
