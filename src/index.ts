@@ -14,7 +14,7 @@ app.use('/api/product',productRouter)
 app.use(bodyParser.urlencoded({
     extended: true
 }))
-mongoose.connect("mongodb://0.0.0.0:27017/dgcDB")
+mongoose.connect("mongodb://0.0.0.0:27017/testingDB")
 
 app.get('/', (_req, res) => {
     console.log("ping");
